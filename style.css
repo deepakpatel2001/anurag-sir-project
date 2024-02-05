@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #f2f9ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainHeading {
+  font-size: 6.4rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  text-align: center;
+  color: #48a300;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.today {
+  color: #61481c;
+}
+
+.parentContainer {
+  width: 66rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+  font-family: cursive;
+  padding: 2rem;
+  min-height: 50rem;
+  background-color: #fbfbfb;
+  border-radius: 1.5rem;
+}
+
+.greeting {
+  font-size: 3.2rem;
+}
+
+.paraGraph {
+  width: 32rem;
+  height: 2.8rem;
+  color: #858585;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+.range {
+  margin-top: 2rem;
+  width: 100%;
+  border-radius: 1.5rem;
+  background-color: #48a3001a;
+  height: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.message {
+  position: relative;
+  top: -3rem;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #48a300;
+  border-radius: 1.5rem;
+  transition: 0.7s linear;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  text-align: start;
+  margin-top: -1rem;
+}
+
+.animation {
+  color: #48a300;
+  font-size: 1.8rem;
+  animation: doingAnimation 0.5s infinite;
+}
+
+@keyframes doingAnimation {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(1.3rem);
+  }
+  50% {
+    transform: translate(0);
+  }
+  75% {
+    transform: translate(1.3rem);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.centerDiv {
+  width: 100%;
+  margin-top: 6rem;
+}
+
+.divs {
+  width: 57rem;
+  padding: 1.7rem;
+  height: 8.1;
+  border: 2px solid #c9c7c7;
+  border-radius: 1.7rem;
+}
+
+.div2 {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.div1,
+.div3 {
+  width: 100%;
+}
+
+.checkbox {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid black;
+  cursor: pointer;
+  appearance: none;
+  position: relative;
+  overflow: hidden;
+}
+.checkbox:checked::after {
+  background: green;
+  content: "✓";
+  color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+}
+
+.inputField {
+  outline: none;
+  font-size: 2.2rem;
+  border: none;
+  width: 90%;
+}
+
+.underline {
+  text-decoration-line: line-through;
+  color: #48a300;
+}
+
+.lowerDiv {
+  margin-top: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.lowerParentDiv {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+.footer {
+  text-align: center;
+}
